@@ -1,0 +1,287 @@
+
+.proposal-button {
+  background-color: #d1581f; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 7px; 
+  cursor: pointer; 
+  
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  
+}
+
+.proposal-button:hover {
+  background-color: red; 
+}
+
+.box-section {
+  
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.box-section.box1 {
+  text-align: center;
+  background-color: #9e9e9e;
+  padding: 100px; 
+}
+
+.box-section.box2 {
+  
+  background-color: white; 
+}
+
+.box-section.box3 {
+  
+  background-color: #d1581f; 
+}
+
+.centered-text {
+  text-align: center;
+}
+
+
+.containerbox4 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+   
+}
+
+.box5 {
+  background-color: whitesmoke;
+}
+
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 800px; 
+  width: 200%;
+  height: 300px; 
+}
+
+
+.marquee {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+}
+.marquee-content {
+  display: inline-block;
+  margin-top: 5px;
+  animation: marquee 15s linear infinite;
+}
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 15s linear infinite;
+}
+@keyframes swap {
+  0%, 50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+.marquee-content:hover {
+  animation-play-state: paused
+}
+.item1 {
+  display: inline-block;
+  height: 70px;
+  width: 140px;
+  background: #9e9e9e;
+  vertical-align: top;
+  margin-left: 15px;
+}
+.item2 {
+  display: inline-block;
+  height: 70px;
+  width: 100px;
+  background: #9e9e9e;
+  vertical-align: top;
+  margin-left: 15px;
+  line-height: 14px;
+}
+/* Transition */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+}
+
+.active {
+  background-color: white; 
+}
+
+.active-text {
+  color: #d1581f; 
+}
+
+.tab span {
+  position: relative;
+}
+
+.tab span:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: #d1581f; 
+  display: none;
+}
+
+.tab.active span:before {
+  display: block;
+}
+
+.tab-content {
+  margin-top: 20px; 
+}
+
+.tab-pane {
+  display: none;
+}
+
+
+
+.box-section.box2 {
+  
+  background-color: white; 
+  text-align: center; 
+  padding: 20px; 
+  margin: 50px 40px; 
+}
+
+.tab-pane.active {
+  display: block;
+  border: 2px solid white; 
+  padding: 20px; 
+  text-align: left; 
+  margin: 20px 150px; 
+  background-color: #f8f4f4;
+}
+
+.right-aligned-image {
+  float: right;
+  margin-left: 10px;
+  width: 300px; 
+  height: 300px; 
+   
+}
+
+.content-wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+.right-aligned-image {
+  margin-right: 20px; 
+}
+
+.text-content {
+  flex-grow: 1;
+  margin-right: 20px; 
+}
+
+
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+.slick-prev,
+.slick-next,
+.slick-dots {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #333;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  font-size: 12px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #333;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.slick-dots button:hover {
+  border-color: #555;
+  color: #555;
+}

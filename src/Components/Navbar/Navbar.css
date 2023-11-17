@@ -1,0 +1,153 @@
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  margin: 0;
+}
+
+
+.navbar-list a {
+  text-decoration: none;
+  color: black;
+}
+.login-get-proposal button {
+  background-color: #d1581f; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 7px; 
+  cursor: pointer; 
+}
+
+.login-get-proposal button:hover {
+  background-color: red;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-list.show {
+    display: flex;
+  }
+
+  .navbar-list li {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px; 
+  }
+
+  .navbar-list button {
+    margin-top: 10px;
+  }
+
+  .dropdown-icon {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  
+
+  .dropdown-items.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-items {
+    background-color: white; 
+    color: black; 
+    padding: 10px; 
+    border-radius: 12px; 
+  }
+  
+  
+  .dropdown-items a:hover {
+    background-color: #d1581f; 
+    color: white; 
+  }
+  
+ 
+  .middle-items {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .navbar-list li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .navbar-list .with-padding {
+    margin-right: 20px; 
+  }
+
+
+
+  .navbar-list.show {
+    display: flex;
+  }
+
+
+  .dropdown-icon {
+    display: none;
+  }
+
+  .dropdown-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-list li {
+    list-style: none;
+    margin: 0;
+    margin-right: 20px; 
+  }
+
+  .middle-items {
+    flex: 1;
+    text-align: center;
+  }
+
+  .login-get-proposal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+  }
+
+  .login-get-proposal li {
+    margin-left: 20px; 
+  }
+}
+
+.login-page-navbar {
+  background-color: #ffeecc; 
+}
+
+
+.login-page-navbar .dropdown-items {
+  background-color: #ffeecc; 
+}
+
+.home-page-navbar{
+  background-color: #9e9e9e;
+}
+
+.customer-support-navbar {
+  background-color: lightgreen; 
+}
+
